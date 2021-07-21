@@ -72,6 +72,7 @@ namespace DropDown_Homework.Pages
         {
             _GetAllSelectedButton.Click();
             return this;
+        }
         */
 
         public DropDownPage VerifyFirstSelected(string selectedCountry)

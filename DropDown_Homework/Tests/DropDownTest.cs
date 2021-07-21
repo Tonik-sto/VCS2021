@@ -35,7 +35,7 @@ namespace DropDown_Homework.Tests
         public void TestMultipleDropdown1Selected(params string[] selectedElements)
         {
             _page.SelectFromMultipleDropdownByValue(selectedElements.ToList())
-                .VerifyFirstSelected(selectedElements[2]);
+                .VerifyFirstSelected(selectedElements[0].ToString());
         }
         
         [TestCase("New Jersey", "California", TestName = "Pasirenkame 2 reiksmes ir patikriname Get All Selected")]
@@ -44,7 +44,7 @@ namespace DropDown_Homework.Tests
         {
             _page.SelectFromMultipleDropdownByValue(selectedElements.ToList())
                             .ClickGetAllButton()
-                            .VerifyAllSelected(selectedElements);
+                            .VerifyAllSelected(selectedElements.ToString());
         }
 
 
