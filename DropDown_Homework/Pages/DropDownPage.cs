@@ -52,28 +52,6 @@ namespace DropDown_Homework.Pages
             _GetAllSelectedButton.Click();
             return this;
         }
-        /*
-        public void SelectFromMultipleDropDownByValue1(string firstValue, string secondValue)
-        {
-            Actions actions = new Actions(Driver);
-            _MultiDropDown.SelectByValue(firstValue);
-            actions.KeyDown(Keys.Control);
-            _MultiDropDown.SelectByValue(secondValue);
-            actions.KeyUp(Keys.Control);
-            actions.Build().Perform();
-        }
-        public DropDownPage ClickFirstSelectedButton()
-        {
-            _FirstSelectedButton.Click();
-            return this;
-        }
-
-        public DropDownPage ClickAllSelectedButton()
-        {
-            _GetAllSelectedButton.Click();
-            return this;
-        }
-        */
 
         public DropDownPage VerifyFirstSelected(string selectedCountry)
         {
